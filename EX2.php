@@ -1,15 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reverse Array</title>
+</head>
+<body>
+
+
+<h2>Reverse Array Values</h2>
+
+
+<form method="post">
+    Enter array values (separated by comma):<br><br>
+    <input type="text" name="numbers" required>
+    <br><br>
+    <input type="submit" value="Reverse">
+</form>
+
+
 <?php
-
-$num1 = 10;
-$num2 = 20;
-
-if($num1 > $num2)
+if(isset($_POST['numbers']))
 {
-    echo "$num1 is greater than $num2";
-}
-else
-{
-    echo "$num1 is less than $num2";
-}
+    $input = $_POST['numbers'];
 
+
+    // Convert string to array
+    $array = explode(",", $input);
+
+
+    // Reverse the array
+    $reverse = array_reverse($array);
+
+
+    echo "<h3>Original Array:</h3>";
+    echo implode(", ", $array);
+
+
+    echo "<h3>Reversed Array:</h3>";
+    echo implode(", ", $reverse);
+}
 ?>
+
+
+</body>
+</html>

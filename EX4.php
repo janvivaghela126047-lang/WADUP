@@ -1,74 +1,29 @@
 <?php
-$month = date("n");
-echo "<h2>current month using if..else :</h2>";
+    $str = "welcome to marwadi university";
+    echo "<h2>php string function<h2>";
+    echo "<b> orignal string</b> " . $str . "<br></br>";
+    
+    echo "<b>1. strlen():</b></br>";
+    echo"length of string = " . strlen ($str);
+    echo "<br><br>";
 
-if ($month == 1)
-    echo "Current Month: January";
-else if ($month == 2)
-    echo "Current Month: February";
-else if ($month == 3)
-    echo "Current Month: March";
-else if ($month == 4)
-    echo "Current Month: April";
-else if ($month == 5)
-    echo "Current Month: May";
-else if ($month == 6)
-    echo "Current Month: June";
-else if ($month == 7)
-    echo "Current Month: July";
-else if ($month == 8)
-    echo "Current Month: August";
-else if ($month == 9)
-    echo "Current Month: September";
-else if ($month == 10)
-    echo "Current Month: October";
-else if ($month == 11)
-    echo "Current Month: November";
-else
-    echo "Current Month: December";
+    echo "<br>2.strpos():</b><br>";
+    echo"position of marwadi = " . strpos($str, "marwadi");
+    echo "<br><br>";
 
-    echo "<hr>";
+    echo "<br>3.str_word_count():</b><br>";
+    echo"total Word = " . str_word_count($str);
+    echo "<br><br>";
 
-    echo"<h1> current month using switch :</h2>";
+    echo "<br>4.strrev():</b><br>";
+    echo"reverse string = " . strrev($str);
+    echo "<br><br>";
 
-    switch ($month) {
-        case 1:
-            echo "Current Month: January";
-            break;
-        case 2:
-            echo "Current Month: February";
-            break;
-        case 3:
-            echo "Current Month: March";
-            break;
-        case 4:
-            echo "Current Month: April";
-            break;
-        case 5:
-            echo "Current Month: May";
-            break;
-        case 6:
-            echo "Current Month: June";
-            break;
-        case 7:
-            echo "Current Month: July";
-            break;
-        case 8:
-            echo "Current Month: August";
-            break;
-        case 9:
-            echo "Current Month: September";
-            break;
-        case 10:
-            echo "Current Month: October";
-            break;
-        case 11:
-            echo "Current Month: November";
-            break;
-        case 12:
-            echo "Current Month: December";
-            break;
-        default:
-            echo "Invalid Month";
-    }
+    echo "<br>5. strtolower():</b><br>";
+    echo strtolower($str);
+    echo "<br><br>";
+
+    echo "<br>6.strtoupper():</b><br>";
+    echo strtoupper($str);
+    
 ?>

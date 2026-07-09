@@ -1,7 +1,7 @@
 <?php
-
 $numeric = array ('mon','tue','wed','thu','fri','sat','sun');
 print_r($numeric);
+
 
 echo "<br> <br>";
 //associative array
@@ -20,6 +20,7 @@ $month = array(
     "December"=>31
 );
 print_r($month);
+
 
 echo "<br> <br>";
 //Multidimensional Array

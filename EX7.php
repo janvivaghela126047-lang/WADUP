@@ -1,19 +1,8 @@
 <?php
-require "header.php";
-?>
 
-<div class="content">
-    <h2>PHP Include and Require Example</h2>
+date_default_timezone_set("Asia/kolkata");
+echo "the time is ". date("h:i:s a");
+echo "<b>date_format(): </b>";
+echo date("d-m-y");
 
-    <p>
-        This page includes the header using <b>require()</b>.
-    </p>
-
-    <p>
-        The footer is added using <b>include()</b>.
-    </p>
-</div>
-
-<?php
-include "footer.php";
 ?>
